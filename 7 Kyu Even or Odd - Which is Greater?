@@ -1,0 +1,9 @@
+def even_or_odd(s):
+    even = [int(x) for x in s if int(x) % 2 == 0]
+    odd = [int(x) for x in s if int(x) % 2 != 0]
+    if sum(even) > sum(odd):
+        return 'Even is greater than Odd'
+    elif sum(even) < sum(odd):
+        return 'Odd is greater than Even'
+    else:
+        return 'Even and Odd are the same'
