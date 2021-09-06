@@ -1,0 +1,6 @@
+def count(string):
+    if string == '':
+        return {}
+    else:
+        my_dict = {i: string.count(i) for i in string}
+        return my_dict
