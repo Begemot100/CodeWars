@@ -1,0 +1,7 @@
+def unique_in_order(iterable):
+    iterable = []
+    for i, j in enumerate(unique_in_order):
+        if unique_in_order[i] != unique_in_order[i-1]:
+            iterable.append(j)
+    return iterable
+
