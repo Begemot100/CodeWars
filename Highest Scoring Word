@@ -1,0 +1,12 @@
+def high(x):
+    words = x.split() 
+    highest_word = ""
+    highest_score = 0
+    for word in words:
+        score = 0
+        for letter in word:
+            score += ord(letter) - ord('a') + 1 
+        if score > highest_score: 
+            highest_word = word 
+            highest_score = score
+    return highest_word
