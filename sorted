@@ -1,0 +1,11 @@
+def is_sorted_and_how(arr):
+    res=all(i-j>0 for i,j in zip(arr, arr[1:]))
+    res1 = all(j-i>0 for i,j in zip(arr, arr[1:]))
+    if res == True:
+        return "yes, descending"
+    elif res1 == True:
+        return "yes, ascending"
+    else:
+        return 'no'
+    
+    
